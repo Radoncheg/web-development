@@ -1,5 +1,8 @@
 <?php
   header('Content-Type: text/plain');
+  
+  echo getPswdStrength();
+
   function getGetParameter(string $name): ? string
   {
     return isset($_GET[$name]) ? (string)$_GET[$name] : null; 
@@ -36,7 +39,7 @@
         if (ctype_lower($pswd{$i})) 
             $count++; 
     if ($count !== 0)
-        return (strlen($pswd) - $count)*2;
+        return (strlen($pswd) - $count) * 2;
   }
   
   function decOnlyLettersStrength($pswd) 
@@ -77,5 +80,3 @@
     $pswdStrength += decRepeats($pswd);
     return $pswdStrength;
   }
-
-  echo getPswdStrength();
