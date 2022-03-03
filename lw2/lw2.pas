@@ -1,0 +1,12 @@
+PROGRAM LW2(INPUT, OUTPUT);
+uses Dos;
+BEGIN {LW2}
+  WRITELN('Content-Type: text/plain');
+  WRITELN;
+  WRITELN('Hello');
+  WRITELN(GetEnv('REQUEST_METHOD'));
+  WRITELN(GetEnv('QUERY_STRING'));
+  WRITELN(GetEnv('CONTENT_LENGTH'));
+  WRITELN(GetEnv('HTTP_USER_AGENT'));
+  WRITELN(GetEnv('HTTP_HOST'))
+END.{LW2}

@@ -1,20 +1,22 @@
 PROGRAM WorkWithQueryString(INPUT, OUTPUT);
 uses Dos;
 
-FUNCTION GetQueryStringParameter(Key: STRING): STRING;
+FUNCTION GetQueryStringParameter(Key:STRING):STRING;
+VAR
+  Str: STRING;
 BEGIN
-  IF (Key = 'first_name') AND (Key = Copy(GetEnv('QUERY_STRING'), 0, Pos('=', GetEnv('QUERY_STRING'))-1 ))
+  Str := GetEnv('QUERY_STRING');
+  IF Pos(Key, Str) = 0
   THEN
-    Key := Copy(GetEnv('QUERY_STRING'), Pos('=', GetEnv('QUERY_STRING'))+1, Length(GetEnv('QUERY_STRING')))
+    WRITE('Введите параметр')
   ELSE
-    IF (Key = 'last_name') AND (Key = Copy(GetEnv('QUERY_STRING'), 0, Pos('=', GetEnv('QUERY_STRING'))-1 ))
-    THEN
-      Key := Copy(GetEnv('QUERY_STRING'), Pos('=', GetEnv('QUERY_STRING'))+1, Length(GetEnv('QUERY_STRING')))
-    ELSE
-      IF (Key = 'age') AND (Key = Copy(GetEnv('QUERY_STRING'), 0, Pos('=', GetEnv('QUERY_STRING'))-1 ))
+    BEGIN
+      Delete(Str, 1, Pos(Key, Str) + Length(Key));
+      IF Pos('?', Str) <> 0
       THEN
-        Key := Copy(GetEnv('QUERY_STRING'), Pos('=', GetEnv('QUERY_STRING'))+1, Length(GetEnv('QUERY_STRING')));
-   WRITE(Key)
+        Delete(Str, Pos('?', Str), Length(Str) - Pos('?',Str) + 1);
+     WRITE(Str)
+    END
 END;
 
 BEGIN
