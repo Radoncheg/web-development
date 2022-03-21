@@ -1,0 +1,167 @@
+.logo
+{
+    font: 700 31px/122.33% Montserrat, sans-serif;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+
+.highlight
+{
+    color: #EE58B6;
+}
+
+.menu
+{
+    Font: 500 16px/1 Montserrat, sans-serif;
+    color: #000;
+}
+
+.menu-button1
+{
+    Font: 500 16px/1 Montserrat, sans-serif;
+    background-color: #000;
+    color: #FFF;
+    padding: 18px 34px;
+    border-radius: 5px; 
+    text-align: center;
+    width: 207px;       
+}
+
+.menu-button2
+{
+    Font: 500 16px/1 Montserrat, sans-serif;
+    background-color: #000;
+    color: #FFF;
+    padding: 18px 34px;
+    border-radius: 5px; 
+    text-align: center;
+    width: 292px;       
+}
+
+
+.HeadLogo
+{
+    Font: 600 100px/0.32 Montserrat, sans-serif;
+}
+
+.HeadText
+{
+    Font: 400 26px/1.2 Roboto Condensed, sans-serif;
+    padding: 0px 0px 19px 0px;
+
+}
+
+.HeadImage
+{
+    height: 637px;
+    width: 762px;
+}
+
+.bar
+{
+    background: #000;
+}
+
+.bar__block
+{
+    height: 132px;
+    padding: 100px 0px 142px 393px;
+}
+
+.item-bar__icon
+{
+    height: 60px;
+    width: 60px;
+    padding: 16px 0px 16px 118px;
+}
+
+.item-bar__text
+{
+    color: #FFF;
+    Font: 400 22px/120% Roboto Condensed, sans-serif;
+}
+
+.content
+{
+    padding-bottom: 95px;
+
+}
+
+.content-item__image
+{
+    width: 510px;
+    height: 476px;
+}
+
+.content-item__title
+{
+  margin: 0px;  
+}
+
+.content-item__title_text
+{
+    margin: 26px;
+    Font: 500 48px/1.26 Montserrat, sans-serif;
+}
+
+.content-item__text
+{
+    Font: 400 18px/1.35 Roboto Condensed, sans-serif;
+}
+
+.skills
+{
+    padding-top: 0px;
+}
+
+.skills__title_text
+{
+    Font: 500 48px/1 Montserrat, sans-serif;
+}
+
+.skills__block
+{
+    margin-top: 65px;
+}
+
+.item-skills
+{
+    background-color: #000;
+    height: 190px;
+    width: 358px;
+    border-radius: 7px;
+    margin: 30px;
+}
+
+.item-skills__icon
+{
+    padding: 32px 0px 23px 40px;
+    height: 48px;
+    width: 37.16px;
+
+}
+
+.item-skills__text
+{
+    padding-left: 40px;
+    Font: 400 18px/1.15 Roboto Condensed, sans-serif;
+    color: #fff;
+}
+
+.footer
+{
+    background: #000;
+    height: 108px;
+    width: auto;  
+}
+
+.white
+{
+    color: #FFF;
+    padding: 35px 500px;
+}
+
+.black
+{
+    color: #000;
+}
