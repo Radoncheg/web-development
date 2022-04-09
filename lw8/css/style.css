@@ -1,0 +1,637 @@
+.page-margin
+{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.menu-btn
+{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn span:nth-of-type(2)
+{
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3)
+{
+    top: calc(50% + 5px);
+}
+
+.menu-btn span
+{
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+}
+/* Меняем гамбургер иконку, когда меню открыто */
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.highlight
+{
+    color: #EE58B6;
+}
+
+.header-logo
+{
+    margin-left: 120px;
+}
+
+.menu__item
+{
+    padding-right: 86px;
+    cursor: pointer;
+}
+
+.navigation
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font: 600 16px/20px 'Montserrat', sans-serif;
+}
+
+.navigation__menu
+{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+.menu__button
+{
+    width: 247px;
+    height: 55px;
+    font: 600 16px 'Montserrat';
+    background-color:#000;
+    color: #FFF;
+    margin-right: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top
+{
+    display: flex;
+    padding: 40px;
+    margin-top: 162px;
+    justify-content: space-between;
+}
+
+.top__content
+{
+    padding: 30px;
+}
+
+.top__content_text-large
+{
+    font: 600 100px 'Montserrat';
+}
+
+.top__content_text-small
+{
+    font: 400 26px 'Roboto Condensed';
+}
+
+.image
+{
+    width: 100%;
+}
+
+.top__button
+{
+    background: black;
+    margin-top: 45px;
+    width: 332px;
+    height: 55px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font: 400 16px 'Montserrat';
+}
+
+.image-done
+{
+    max-width: 760px;
+    min-width: 200px;
+    right: 0;
+    float: right;
+}
+
+.bar
+{
+    display: flex;
+    background: black;
+    color: #FFF;
+    height: 398px;
+    font: 22px 'Roboto Condensed';
+    align-items: center;
+    justify-content: center;
+}
+
+.bar__item
+{
+    text-align: center;
+    width: 330px;
+    padding: 50px;
+}
+
+.bottom__content
+{
+    display: flex;
+    align-items: center;
+    margin: 135px auto;
+    max-width: 1140px;
+}
+
+.image-finances
+{
+    max-width: 535px;
+}
+
+.bottom__content_text
+{
+    margin-left: 50px;
+}
+
+.bottom__content_text-large-finances
+{
+    font: 500 48px 'Montserrat';
+    text-align: left;
+    margin-top: 195px;
+    margin-bottom: 28px;
+}
+
+.bottom__content_text-small-finances
+{
+    font: 400 18px 'Roboto Condensed';
+    text-align: left;
+}
+
+.bottom__content_text-large-mindblowing
+{
+    font: 500 48px 'Montserrat';
+    text-align: left;
+    margin-top: 95px;
+    margin-bottom: 25px;
+
+}
+
+.bottom__content_text-small-mindblowing
+{
+    font: 400 18px 'Roboto Condensed';
+    text-align: left;
+}
+
+.image-mindblowing
+{
+    margin-top: 80px;
+    margin-left: 180px;
+    max-width: 377px;
+}
+
+.cart-container
+{
+    margin: 0 50px;
+}
+
+.columns
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.columns__header
+{
+    margin-top: 135px;
+    text-align: center;
+    font: 500 48px 'Montserrat';
+    margin-bottom: 47px;
+}
+
+.columns__cell
+{
+    font: 400 18px 'Roboto Condensed';
+    width: 280px;
+    padding: 46px 40px;
+    text-align: left;
+    background: black;
+    color: white;
+    border-radius: 7px;
+    margin: 15px;
+    flex: 1 0 250px;
+}
+
+.footer
+{
+    display: flex;
+    height: 108px;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+}
+
+.white
+{
+    color: #FFF;
+    padding: 35px 840px;
+}
+
+.column__block
+{
+    margin-bottom: 50px;
+}
+
+.register
+{
+    height: 847px;
+}
+
+.register__title
+{
+    font: 500 26px 'Montserrat';
+    text-align: center;
+}
+
+.register__form
+{
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 103px;
+}
+
+.register__form_input
+{
+    width: 480px;
+    height: 64px;
+    background: #FFF;
+    border: 1.34888px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 20px;
+    font: 500 18px 'Montserrat';
+
+}
+
+.select option:before
+{
+    content: '';
+    height: 30px;
+}
+.image-welcome
+{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 1366px)
+{
+    .header-logo
+    {
+        margin-left: 40px;
+    }
+
+    .navigation__menu
+    {
+        margin-right: 40px;
+    }
+
+    .menu__button
+    {
+        margin-right: 10px;
+    }
+    .menu__item
+    {
+        padding-right: 20px;
+    }
+
+    .navigation
+    {
+        margin: 10px 40px;
+    }
+
+    .image-done
+    {
+        max-width: 70%;
+    }
+
+    .top
+    {
+        margin: 40px;
+    }
+
+    .top, .top__content
+    {
+        padding: 0;
+    }
+
+    .top__content_text-large
+    {
+        font-size: 60px;
+    }
+
+    .column__block
+    {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    .header-logo
+    {
+        max-width: 100px;
+        margin-left: 10px;
+    }
+
+    .navigation
+    {
+        margin: 10px 30px;
+    }
+
+    .navigation__menu
+    {
+        margin-right: 10px;
+    }
+
+    .menu__button
+    {
+        width: auto;
+        padding: 15px;
+        margin-right: 10px;
+    }
+
+    .image-done
+    {
+        float: left;
+        width: 100%;
+    }
+
+    .top
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .top__button
+    {
+        margin-top: 20px;
+    }
+
+    .bar
+    {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .bar__item
+    {
+        display: inherit;
+        flex-direction: row;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .bar__text
+    {
+        padding-left: 20px;
+    }
+
+    .bottom__content
+    {
+        flex-direction: column;
+        margin: 40px;
+        align-items: flex-start;
+    }
+
+    .bottom__content_text
+    {
+        margin-left: 0;
+    }
+
+    .bottom__content_text-large-finances, .bottom__content_text-large-mindblowing, .bottom__content_text-small-mindblowing
+    {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .image-finances, .image-mindblowing
+    {
+        max-width: 65%;
+        margin: 0;
+        align-self: center;
+    }
+
+    .second-bottom-content
+    {
+        flex-direction: column-reverse;
+    }
+
+    .cart-container
+    {
+        margin: 0 25px;
+    }
+
+    .columns__cell
+    {
+        flex-direction: row;
+        display: flex;
+    }
+    .columns__cell img
+    {
+        max-width: 35px;
+    }
+
+    .columns__cell div
+    {
+        margin: 20px;
+    }
+
+    .columns__header
+    {
+        margin: 20px 40px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .navigation
+    {
+        font-size: 14px;
+        justify-content: flex-end;
+    }
+
+    .menu__item
+    {
+        padding-right: 10px;
+    }
+
+    .menu__button
+    {
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+
+
+    .column__block
+    {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 700px)
+{
+    .header-logo
+    {
+        display: none;
+    }
+}
+@media (max-width: 600px)
+{
+    .menu-btn
+    {
+        display: block;
+    }
+
+    .navigation
+    {
+        justify-content: flex-start;
+        display: none;
+        padding-bottom: 20px;
+        box-shadow:  4px 8px 8px 0 rgba(34, 60, 80, 0.2);
+        margin-left: -8px;
+        margin-right: -8px;
+        position: absolute;
+        width: 100%;
+    }
+
+    .navigation__menu
+    {
+        flex-direction: column;
+        align-items: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu__button
+    {
+        margin-top: 20px;
+        margin-left: 8px;
+
+    }
+
+    .menu__item
+    {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .active
+    {
+        display: flex;
+        background-color: #FFF;
+        opacity: 0.85;
+    }
+}
+
+@media (max-width: 480px)
+{
+
+      .top__content_text-large, .bottom__content_text-large-mindblowing, .bottom__content_text-large-finances, .columns__header
+    {
+        font-size: 30px;
+    }
+
+    .top__content_text-small, .bottom__content_text-small-finances
+    {
+        font-size: 20px;
+    }
+
+    .top__button
+    {
+        width: 70%;
+        margin-top: 0;
+        height: auto;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .top
+    {
+        margin-left: 0;
+        margin-right: 5px;
+    }
+
+    .bar__item
+    {
+        padding-left: 20px;
+    }
+
+    .bar__text
+    {
+        font-size: 18px;
+    }
+
+    .bottom__content, .columns__header
+    {
+        margin: 20px;
+    }
+
+    .image-finances, .image-mindblowing
+    {
+        max-width: 150px;
+        margin: 0;
+    }
+
+    .cart-container
+    {
+        margin: 0 5px;
+    }
+
+    .columns__cell
+    {
+        display: flex;
+        margin: 0;
+        border-radius: 0;
+        padding: 0 20px;
+    }
+
+    .column__block
+    {
+        margin-bottom: 20px;
+    }
+
+
+}
