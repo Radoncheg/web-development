@@ -4,6 +4,52 @@
     margin: 0 auto;
 }
 
+.menu-btn
+{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index:2;
+    overflow: hidden;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn span:nth-of-type(2)
+{
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3)
+{
+    top: calc(50% + 5px);
+}
+
+.menu-btn span
+{
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #222222;
+    transition: all 0.5s;
+}
+/* Меняем гамбургер иконку, когда меню открыто */
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
 .highlight
 {
     color: #EE58B6;
@@ -17,6 +63,7 @@
 .menu__item
 {
     padding-right: 86px;
+    cursor: pointer;
 }
 
 .navigation
@@ -30,7 +77,6 @@
 .navigation__menu
 {
     display: flex;
-    margin-right: 120px;
     align-items: center;
     list-style-type: none;
     white-space: nowrap;
@@ -38,18 +84,14 @@
 
 .menu__button
 {
-    display: inherit;
-    justify-content: center;
     width: 247px;
     height: 55px;
     font: 600 16px 'Montserrat';
     background-color:#000;
     color: #FFF;
-    margin-top: -50px;
-    margin-left: 600px;
     margin-right: 120px;
     border-radius: 5px;
-
+    cursor: pointer;
 }
 
 .top
@@ -239,7 +281,6 @@
 
     .menu__button
     {
-        margin-left: 400px;
         margin-right: 10px;
     }
     .menu__item
@@ -254,7 +295,7 @@
 
     .image-done
     {
-        max-width: 50%;
+        max-width: 70%;
     }
 
     .top
@@ -301,18 +342,18 @@
         width: auto;
         padding: 15px;
         margin-right: 10px;
-        margin-left: 440px;
     }
 
     .image-done
     {
         float: left;
-        width: 50%;
+        width: 100%;
     }
 
     .top
     {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .top__button
@@ -363,8 +404,9 @@
 
     .image-finances, .image-mindblowing
     {
-        max-width: 250px;
+        max-width: 65%;
         margin: 0;
+        align-self: center;
     }
 
     .second-bottom-content
@@ -416,60 +458,73 @@
     {
         height: auto;
         width: auto;
-        padding: 3px;
-        margin-left: 340px;
-        margin-top: -40px;
+        padding: 10px;
     }
 
-    .header-logo
-    {
-        display: none;
-    }
 
     .column__block
     {
         margin-bottom: 40px;
     }
 }
-
+@media (max-width: 700px)
+{
+    .header-logo
+    {
+        display: none;
+    }
+}
 @media (max-width: 600px)
 {
+    .menu-btn
+    {
+        display: block;
+    }
+
     .navigation
     {
         justify-content: flex-start;
+        display: none;
+        padding-bottom: 20px;
+        box-shadow:  4px 8px 8px 0 rgba(34, 60, 80, 0.2);
+        margin-left: -8px;
+        margin-right: -8px;
+        position: absolute;
+        width: 100%;
     }
+
     .navigation__menu
     {
         flex-direction: column;
         align-items: inherit;
+        margin: 0;
+        padding: 0;
     }
 
     .menu__button
     {
-        margin-left: 0;
-        margin-top: 0;
+        margin-top: 20px;
+        margin-left: 8px;
+
     }
 
     .menu__item
     {
         font-size: 16px;
-        padding-bottom: 10px;
+        padding: 10px;
+    }
+    .active
+    {
+        display: flex;
+        background-color: #FFF;
+        opacity: 0.85;
     }
 }
 
 @media (max-width: 480px)
 {
-    .navigation
-    {
-        margin: 10px 0;
-    }
 
-    .navigation__menu
-    {
-        margin: 20px;
-    }
-
-    .top__content_text-large, .bottom__content_text-large-mindblowing, .bottom__content_text-large-finances, .columns__header
+      .top__content_text-large, .bottom__content_text-large-mindblowing, .bottom__content_text-large-finances, .columns__header
     {
         font-size: 30px;
     }
@@ -532,5 +587,6 @@
     {
         margin-bottom: 20px;
     }
+
 
 }

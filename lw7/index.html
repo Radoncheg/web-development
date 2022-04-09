@@ -10,10 +10,16 @@
 </head>
 <body>
     <div class="page-margin">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <header class="navigation">
             <img src="images/header_logo.svg" alt="Logo" class="header-logo">
+            <div class="navigation__menu">
             <nav>
-                <ul class="navigation__menu">
+                <div class="navigation__menu">
                     <li class="menu__item">
                         <a>Что будет на курсе?</a>
                     </li>
@@ -23,9 +29,10 @@
                     <li class="menu__item">
                         <a>Автор</a>
                     </li>
-                </ul
+                </div>
             </nav>
             <button class="menu__button">Записаться на курс</button>
+            <div>
         </header>
         <div class="top">
             <div class="top__content">
@@ -121,4 +128,14 @@
         <img src="images/footer_logo.svg" alt="Logo">
     </footer>
 </body>
+<script>
+    let menuBtn = document.querySelector('.menu-btn');
+    let menu = document.querySelector('.navigation');
+    menuBtn.addEventListener('click', function(){
+        menu.classList.toggle('active');
+        menuBtn.classList.toggle('active')
+    })
+</script>
 </html>
+
+
