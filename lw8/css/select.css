@@ -41,6 +41,7 @@
     position: absolute;
     width: 480px;
     z-index: 2;
+    cursor: pointer;
     background-color: white;
 }
 
@@ -62,7 +63,7 @@
     position: relative;
 }
 
-.select-activity__menu__option:hover
+.select-activity__menu_option:hover
 {
     background-color: #F1F1F1;
 }
@@ -84,7 +85,7 @@
     top: 13px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 700px)
 {
     .select-activity__menu
     {

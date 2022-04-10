@@ -29,9 +29,10 @@ function updateOptions()
         if (currentValue === option.dataset.activity)
         {
             option.classList.add('option__checked')
-        } else
-            {
+        }
+        else
+        {
             option.classList.remove('option__checked')
-            }
+        }
     })
 }

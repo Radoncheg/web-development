@@ -1,7 +1,5 @@
 <?php
 $fullPath = saveSurvey();
-if ($fullPath)
-    echo "Файл успешно записан в txt файл по адресу: $fullPath";
 
 function getPostParameter(string $name): ?string
 {
@@ -83,3 +81,5 @@ function saveSurvey()
 
     return $fullPath;
 }
+
+include 'getSurvey.php';

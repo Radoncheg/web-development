@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Form</title>
-    <link rel="stylesheet" href="/task1/src/pages/style.css"/>
-    <link href="css/select.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/select.css"/>
 </head>
 <body>
     <div class="register page-margin">
@@ -20,7 +20,7 @@
             <input type="email" name="email" placeholder="Email" class="register__form_input">
             <div class="select-container">
                 <div class="select-activity-input">
-                    <input type="text" name="activities" id="select-activity" placeholder="Деятельность" class="select-activity register__form_input">
+                    <input type="text" name="activities" id="select-activity" readonly="readonly" placeholder="Деятельность" class="select-activity register__form_input">
                 </div>
                 <div class="select-activity__menu">
                     <ul class="select-activity__menu_items">
