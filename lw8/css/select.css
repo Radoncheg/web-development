@@ -1,7 +1,7 @@
 .select-activity
 {
     cursor: pointer;
-    caret-color: transparent;
+    caret-color: transparent;;
 }
 
 .select-activity-input
@@ -82,4 +82,38 @@
     width: 24px;
     height: 19px;
     top: 13px;
+}
+
+@media (max-width: 600px)
+{
+    .select-activity__menu
+    {
+        width: 420px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .option__checked:after
+    {
+        right: 12px;
+    }
+    .select-activity-input:after
+    {
+        right: 22px;
+    }
+
+    .select-activity__menu
+    {
+        width: 350px;
+    }
+
+@media (max-width: 390px)
+    {
+        .select-activity__menu
+        {
+            max-width: 280px;
+        }
+    }
+
 }
