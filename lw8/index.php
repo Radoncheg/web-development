@@ -129,8 +129,7 @@
         </div>
     </div>
 
-<?php include 'form.php';
-?>
+<?php include 'form.php'; ?>
 
     <footer class="footer">
         <img src="images/footer_logo.svg" alt="Logo">

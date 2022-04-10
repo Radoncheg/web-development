@@ -1,0 +1,3 @@
+email: sen@iorina.ru
+Имя: bombino
+Деятельность: Программист

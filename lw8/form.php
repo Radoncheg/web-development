@@ -15,7 +15,7 @@
         </div>
         <div class="register__title">Записаться на курс
         </div>
-        <form action="https://ya.ru" method="post" id="register" class="register__form">
+        <form action="saveSurvey.php" target="_blank" method="post" id="register" class="register__form">
             <input type="text" name="name" placeholder="Ваше имя" class="register__form_input">
             <input type="email" name="email" placeholder="Email" class="register__form_input">
             <div class="select-container">
