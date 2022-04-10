@@ -32,7 +32,9 @@
                     </li>
                 </div>
             </nav>
-            <button class="menu__button">Записаться на курс</button>
+            <form action="#register">
+                <button class="menu__button">Записаться на курс</button>
+            </form>
             </div>
         </header>
         <div class="top">
@@ -41,9 +43,11 @@
                 <p class="top__content_text-small">
                     Онлайн-курс для творческих людей, о том, как управлять своим временем
                 </p>
-                <button class="top__button">
-                    Записаться на курс
-                </button>
+                <form action="#register">
+                    <button class="top__button">
+                        Записаться на курс
+                    </button>
+                </form>
             </div>
             <div class="image-done">
                 <img src="images/Done.jpg" alt="Done" class="image">
@@ -131,7 +135,7 @@
         </div>
         <div class="register__title">Записаться на курс
         </div>
-        <form action="https://ya.ru" method="post" class="register__form">
+        <form action="https://ya.ru" method="post" id="register" class="register__form">
             <input type="text" name="name" placeholder="Ваше имя" class="register__form_input">
             <input type="email" name="email" placeholder="Email" class="register__form_input">
             <div class="select-container">
@@ -156,15 +160,9 @@
         <img src="images/footer_logo.svg" alt="Logo">
     </footer>
 </body>
-<script src="js/select.js"/>
-<script>
-    let menuBtn = document.querySelector('.menu-btn');
-    let menu = document.querySelector('.navigation');
-    menuBtn.addEventListener('click', function(){
-        menu.classList.toggle('active');
-        menuBtn.classList.toggle('active')
-    })
-</script>
+
+<script src="js/script.js"></script>
+
 </html>
 
 
