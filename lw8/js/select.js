@@ -3,14 +3,17 @@ const selectActivityInput = document.getElementById('select-activity');
 const selectActivityMenu = document.querySelector('.select-activity__menu');
 
 
-selectActivityInput.addEventListener('click', function(ev){
+selectActivityInput.addEventListener('click', function(ev)
+{
     selectActivityContainer.classList.toggle('expanded');
     updateOptions()
 })
 
-selectActivityMenu.addEventListener('click', function(ev){
+selectActivityMenu.addEventListener('click', function(ev)
+{
     const value = ev.target.dataset.activity;
-    if (value) {
+    if (value)
+    {
         selectActivityInput.value = value
     }
     selectActivityContainer.classList.remove('expanded')
@@ -18,13 +21,17 @@ selectActivityMenu.addEventListener('click', function(ev){
 
 const selectActivityMenuOptions = document.querySelectorAll('.select-activity__menu_option');
 
-function updateOptions() {
+function updateOptions()
+{
     const currentValue = selectActivityInput.value
-    selectActivityMenuOptions.forEach(option => {
-        if (currentValue === option.dataset.activity) {
+    selectActivityMenuOptions.forEach(option =>
+    {
+        if (currentValue === option.dataset.activity)
+        {
             option.classList.add('option__checked')
-        } else {
+        } else
+            {
             option.classList.remove('option__checked')
-        }
+            }
     })
 }

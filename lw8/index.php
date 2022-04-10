@@ -5,7 +5,6 @@
     <title>Don`t do it</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/select.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;500;600&display=swap"
           rel="stylesheet">
 </head>
@@ -129,40 +128,19 @@
             </div>
         </div>
     </div>
-    <div class="register page-margin">
-        <div class="image-welcome">
-            <img src="images/Welcome.png" alt="Welcome">
-        </div>
-        <div class="register__title">Записаться на курс
-        </div>
-        <form action="https://ya.ru" method="post" id="register" class="register__form">
-            <input type="text" name="name" placeholder="Ваше имя" class="register__form_input">
-            <input type="email" name="email" placeholder="Email" class="register__form_input">
-            <div class="select-container">
-                <div class="select-activity-input">
-                    <input type="text" name="activities" id="select-activity" placeholder="Деятельность" class="select-activity register__form_input">
-                </div>
-                <div class="select-activity__menu">
-                    <ul class="select-activity__menu_items">
-                        <li class="select-activity__menu_option" data-activity="Программист">Программист</li>
-                        <li class="select-activity__menu_option" data-activity="Дизайнер">Дизайнер</li>
-                        <li class="select-activity__menu_option" data-activity="Маркетолог">Маркетолог</li>
-                    </ul>
-                </div>
-            </div>
 
-            <label for="agreement" class="register__checkbox_text">Согласен получать информационные материалы о старте курса</label>
-            <button type="submit" class="register__form_button">Записаться на курс</button>
-            <input type="checkbox" class="register__agreement_checkbox" id="agreement" name="agreement">
-        </form>
-    </div>
+<?php include 'form.php';
+?>
+
     <footer class="footer">
         <img src="images/footer_logo.svg" alt="Logo">
     </footer>
 </body>
 
-<script src="js/script.js"></script>
+
+
+
+<script src="js/burger.js"></script>
 
 </html>
-
 
