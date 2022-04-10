@@ -129,7 +129,7 @@
     width: 332px;
     height: 55px;
     border-radius: 5px;
-    color: white;
+    color: #FFF;
     text-align: center;
     font: 400 16px 'Montserrat';
 }
@@ -242,7 +242,7 @@
     padding: 46px 40px;
     text-align: left;
     background: black;
-    color: white;
+    color: #FFF;
     border-radius: 7px;
     margin: 15px;
     flex: 1 0 250px;
@@ -277,6 +277,7 @@
 {
     font: 500 26px 'Montserrat';
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .register__form
@@ -301,15 +302,38 @@
 
 }
 
+.register__form_button
+{
+    width: 480px;
+    padding: 20px 146px;
+    font: 500 18px 'Montserrat';
+    margin-top: 35px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.register__checkbox
+{
+    margin-top: 25px;
+}
+
+.register__checkbox_text
+{
+    font: 400 16px 'Roboto Condensed';
+}
+
 .select option:before
 {
     content: '';
     height: 30px;
 }
+
 .image-welcome
 {
-    width: 100%;
-    text-align: center;
+    max-width: 290px;
+    margin-left: auto;
+    margin-right: auto
 }
 
 @media (max-width: 1366px)
@@ -506,12 +530,12 @@
         padding: 10px;
     }
 
-
     .column__block
     {
         margin-bottom: 40px;
     }
 }
+
 @media (max-width: 700px)
 {
     .header-logo
@@ -519,6 +543,7 @@
         display: none;
     }
 }
+
 @media (max-width: 600px)
 {
     .menu-btn
@@ -526,12 +551,12 @@
         display: block;
     }
 
-    .navigation
-    {
+    .navigation {
+
         justify-content: flex-start;
         display: none;
         padding-bottom: 20px;
-        box-shadow:  4px 8px 8px 0 rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 8px 8px 0 rgba(34, 60, 80, 0.2);
         margin-left: -8px;
         margin-right: -8px;
         position: absolute;
@@ -558,12 +583,29 @@
         font-size: 16px;
         padding: 10px;
     }
+
     .active
     {
         display: flex;
         background-color: #FFF;
         opacity: 0.85;
     }
+
+    .register__form_button
+    {
+        height: auto;
+        max-width: 420px;
+        white-space: nowrap;
+        padding: 20px 20px;
+    }
+
+    .register__form_input, .register__checkbox
+    {
+        height: auto;
+        max-width: 420px;
+
+    }
+
 }
 
 @media (max-width: 480px)
@@ -633,5 +675,19 @@
         margin-bottom: 20px;
     }
 
+    .register__form_input, .register__form_button, .register__checkbox
+    {
+        max-width: 350px;
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
 
+}
+
+@media (max-width: 390px)
+{
+    .register__form_input, .register__form_button, .register__checkbox
+    {
+        max-width: 280px;
+    }
 }
