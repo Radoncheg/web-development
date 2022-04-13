@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3cd8fe8e-198d-40a1-b450-2b34ed6142a6" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27FpBUwW2pfnubMQpKPfflWZNf9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="ReaderModeSettings">
+    <option name="showLigatures" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/index.html/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cd8fe8e-198d-40a1-b450-2b34ed6142a6" name="Changes" comment="" />
+      <created>1648925553931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648925553931</updated>
+      <workItem from="1648925555439" duration="1188000" />
+      <workItem from="1649160564538" duration="27188000" />
+      <workItem from="1649618080166" duration="14000" />
+      <workItem from="1649618961442" duration="9408000" />
+      <workItem from="1649713120659" duration="348000" />
+      <workItem from="1649713502715" duration="16000" />
+      <workItem from="1649764627421" duration="7810000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="667" y="332" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1649537868563">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="667" y="332" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1500.952@0.0.1500.952" timestamp="1649537868563" />
+    <state x="535" y="232" key="FileChooserDialogImpl" timestamp="1649182930160">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="535" y="232" key="FileChooserDialogImpl/0.0.1500.952@0.0.1500.952" timestamp="1649182930160" />
+    <state x="412" y="221" key="run.anything.popup" timestamp="1649509476171">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="412" y="221" key="run.anything.popup/0.0.1500.952@0.0.1500.952" timestamp="1649509476171" />
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1649834956752">
+      <screen x="0" y="0" width="1500" height="952" />
+    </state>
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1500.952@0.0.1500.952" timestamp="1649834956752" />
+  </component>
+</project>
