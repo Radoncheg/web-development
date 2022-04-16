@@ -2,30 +2,16 @@ let isCorrect;
 
 function checkClosedBrackets(str) {
   let openedBracketsCounter = 0;
-  const BrArr = ['(', ')'];
-
   for (let i = 0; i < str.length; i++) {
-
-    if (BrArr.indexOf(str[i]) !== -1) {
-
-      if (str[i] === '(') {
+    if (str[i] === '(') {
         openedBracketsCounter++;
-      } else {
+      } else if (str[i] === ')') {
           if (openedBracketsCounter === 0) return false;
           openedBracketsCounter--;
       }
     }
-  }
 
   return openedBracketsCounter === 0;
-}
-
-function getLastNumber(Stack) {
-  const a = Stack.pop();
-
-  Stack.push(a);
-
-  return !isNaN(parseInt(a));
 }
 
 function makeCalc(action, a, b) {
@@ -39,44 +25,44 @@ function makeCalc(action, a, b) {
     case '/':
       return a / b;
     default: {
-      console.log('Введите действие!');
+      console.log('Ошибка ввода. Введите действие!');
       isCorrect = false;
     }
   }
 }
 
 function calc(str) {
-  const Actions = ['+', '-', '*', '/'];
-  let Result;
-  let IsOver;
+  const actions = ['+', '-', '*', '/'];
+  let result;
+  let isOver;
   isCorrect = true;
-  let Stack = [];
+  let stack = [];
   let b = "";
 
   if (!checkClosedBrackets(str)) {
       console.log("Ошибка ввода. Проверьте скобки!");
       return;
   }
-  str = str.trim().replace('(', ' ').replace(')', ' ');
+
   for (let i = 0; i < str.length; i++) {
-    if (Actions.indexOf(str[i]) !== -1) Stack.push(str[i]);
+    if (actions.indexOf(str[i]) !== -1) stack.push(str[i]);
     else
       if (!isNaN(parseInt(str[i]))) {
         b += str[i];
         if (isNaN(parseInt(str[i+1]))) {
-          while ( getLastNumber(Stack) ) {
-            const a = Stack.pop();
-            const action = Stack.pop();
+          while (!isNaN(parseInt(stack[stack.length-1]))) {
+            const a = stack.pop();
+            const action = stack.pop();
             b = makeCalc(action, parseInt(a), parseInt(b));
           }
-          Stack.push(b);
+          stack.push(b);
           b = "";
         }
       }
     }
 
-  Result = Stack.pop();
-  IsOver = Stack.pop();
-  if ((isCorrect) && (IsOver === undefined)) console.log(Result)
+  result = stack.pop();
+  isOver = stack.pop();
+  if ((isCorrect) && (isOver === undefined)) console.log(result);
   else if (isCorrect) console.log("Ошибка ввода. Аргумент должен быть целочисленным!");
 }
