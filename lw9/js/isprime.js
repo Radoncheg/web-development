@@ -12,12 +12,11 @@ function isPrimeNumber(n) {
 
       if ((arr[i] % j === 0) || !Number.isInteger(arr[i])) {
         isPrime = false;
-        console.log(arr[i], ' is not prime number');
-         break;
+        break;
       }
     }
 
-    if ((isPrime) && Number.isInteger(arr[i]) && arr[i] > 1) console.log(arr[i], ' is prime number');
-    else if (!Number.isInteger(arr[i]) || arr[i] <= 1) console.log(arr[i], ' is not prime number');
+    if ((isPrime) && Number.isInteger(arr[i]) && arr[i] > 1) console.log(arr[i], 'is prime number');
+    else if (!isPrime || !Number.isInteger(arr[i]) || arr[i] <= 1) console.log(arr[i], 'is not prime number');
   }
 }
