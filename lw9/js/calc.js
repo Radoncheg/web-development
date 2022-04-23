@@ -1,3 +1,18 @@
+function stringToArray(str) {
+  let returnedArr = '';
+  for (let i = 0; i < str.length; ++i) {
+    if (str[i] == '(' || str[i] == ')') returnedArr += ' ' + str[i] + ' ';
+    else  returnedArr += (str[i]);
+  }
+  returnedArr = returnedArr.split(' ');
+  returnedArr = returnedArr.filter(Boolean);
+  for (let i = 0; i < returnedArr.length; ++i)
+  {
+    if (Number(returnedArr[i])) returnedArr[i] = Number(returnedArr[i]);
+  }
+  return returnedArr;
+}
+
 function checkClosedBrackets(str) {
   let openedBracketsCounter = 0;
   for (let i = 0; i < str.length; i++) {
@@ -33,18 +48,20 @@ function calc(str) {
   let isOver;
   let stack = [];
   let b = "";
+  let arr = '';
 
   if (!checkClosedBrackets(str)) {
       console.log('Ошибка ввода. Проверьте скобки!');
       return;
   }
 
-  for (let i = 0; i < str.length; i++) {
-    if (actions.indexOf(str[i]) !== -1) stack.push(str[i]);
-    else if (!isNaN(parseInt(str[i]))) {
-      b += str[i];
-      if (isNaN(parseInt(str[i+1]))) {
-        while (!isNaN(parseInt(stack[stack.length-1]))) {
+  if (str !== undefined) arr = stringToArray(str);
+  arr.forEach(function(item){
+    if (actions.indexOf(item) !== -1)
+      stack.push(item)
+    else if ((Number(item)) || item == 0) {
+      b += item;
+        while (Number(stack[stack.length-1])) {
           const a = stack.pop();
           const action = stack.pop();
           if (action === undefined) {
@@ -55,9 +72,8 @@ function calc(str) {
         }
         stack.push(b);
         b = "";
-      }
     }
-  }
+  })
 
   result = stack.pop();
   isOver = stack.pop();
