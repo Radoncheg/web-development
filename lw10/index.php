@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Don`t do it</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/select.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+</head>
+<body class="page">
+    <div class="page-margin">
+        <div class="register page-margin">
+            <button title="Закрыть (ESC)" type="button" class="register__close-button">×</button>
+            <div class="image-welcome">
+                <img src="images/Welcome.png" alt="Welcome" class="image">
+            </div>
+            <div class="register__title">Записаться на курс</div>
+            <form action="saveSurvey.php" target="_blank" method="post" id="register" class="register__form">
+                <input type="text" name="name" placeholder="Ваше имя" class="register__form_input">
+                <input type="email" name="email" placeholder="Email" class="register__form_input">
+                <div class="select-container">
+                    <div class="select-activity-input">
+                        <input type="text" name="activities" id="select-activity" readonly="readonly" placeholder="Деятельность" class="select-activity register__form_input">
+                    </div>
+                    <div class="select-activity__menu">
+                        <ul class="select-activity__menu_items">
+                            <li class="select-activity__menu_option" data-activity="Программист">Программист</li>
+                            <li class="select-activity__menu_option" data-activity="Дизайнер">Дизайнер</li>
+                            <li class="select-activity__menu_option" data-activity="Маркетолог">Маркетолог</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="register__checkbox">
+                    <input type="checkbox" class="register__agreement_checkbox" id="agreement" name="agreement">
+                    <label for="agreement" class="register__checkbox_text">Согласен получать информационные материалы о старте курса</label>
+                </div>
+                <form>
+                    <button type="submit" class="register__form_button">Записаться на курс</button>
+                </form>
+            </form>
+        </div>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <header class="navigation">
+            <img src="images/header_logo.svg" alt="Logo" class="header-logo">
+            <div class="navigation__menu">
+            <nav>
+                <div class="navigation__menu">
+                    <li class="menu__item">
+                        <a>Что будет на курсе?</a>
+                    </li>
+                    <li class="menu__item">
+                        <a>Вопросы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a>Автор</a>
+                    </li>
+                </div>
+            </nav>
+            <button class="menu__button">Записаться на курс</button>
+            </div>
+        </header>
+        <div class="top">
+                <div class="top__content">
+                <div class="top__content_text-large">Не <span class="highlight">делай</span> это</div>
+                <p class="top__content_text-small">
+                    Онлайн-курс для творческих людей, о том, как управлять своим временем
+                </p>
+                <button class="top__button">Записаться на курс</button>
+            </div>
+            <div class="image-done">
+                <img src="images/Done.png" alt="Done" class="image">
+            </div>
+        </div>
+    </div>
+    <div class="bar">
+        <div class="bar__item">
+            <img src="images/Time.svg" alt="Time">
+            <div class="bar__text">
+                Для тех, у кого слишком много идей&nbsp;и слишком мало времени
+            </div>
+        </div>
+        <div class="bar__item">
+            <img src="images/notebook.svg" alt="notebook">
+            <div class="bar__text">
+                Метод «списка не дел», который
+                позволит успевать и реализовывать
+            </div>
+        </div>
+        <div class="bar__item">
+            <img src="images/target.svg" alt="target">
+            <div class="bar__text">
+                Курс научит творческих людей
+                сосредоточиваться
+            </div>
+        </div>
+    </div>
+    <div class="page-margin">
+        <div class="bottom__content">
+            <img src="images/Finances.png" alt="Finances" class="image-finances">
+            <div class="bottom__content_text">
+                <h2 class="bottom__content_text-large-finances">Ты не успеешь</h2>
+                <p class="bottom__content_text-small-finances">
+                    Всех творческих людей объединяет одна проблема - отсутствие времени на
+                    реализацию идей. Как прибавить суткам часы, рассмотрим в нашем курсе.
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom__content second-bottom-content">
+            <div class="bottom__content_text">
+                <h2 class="bottom__content_text-large-mindblowing">Опять дедлайн</h2>
+                <p class="bottom__content_text-small-mindblowing">
+                    В мире, где столько всего интересного, когда же успевать жить?
+                </p>
+            </div>
+            <img src="images/MindBlowing.png" alt="mind blowing" class="image-mindblowing">
+        </div>
+    </div>
+    <div class="column__block">
+        <div class="columns__header">На курсе ты <span class="highlight">сможешь</span></div>
+        <div class="cart-container">
+            <div class="columns">
+                <div class="columns__cell">
+                    <img src="images/one.svg" alt="one">
+                    <div>Понять, что нужно делать, а что делать не стоит.</div>
+                </div>
+                <div class="columns__cell">
+                    <img src="images/two.svg" alt="two">
+                    <div>Перестать себя искусственно ограничивать.</div>
+                </div>
+                <div class="columns__cell">
+                    <img src="images/three.svg" alt="three">
+                    <div>Определить сильные стороны и начать использовать слабые.</div>
+                </div>
+                <div class="columns__cell">
+                    <img src="images/four.svg" alt="four">
+                    <div>Научиться достигать любой цели в&nbsp;3&nbsp;понятных шага.</div>
+                </div>
+                <div class="columns__cell">
+                    <img src="images/five.svg" alt="five">
+                    <div>Сотрудничать эффективно и с правильными людьми.</div>
+                </div>
+                <div class="columns__cell">
+                    <img src="images/six.svg" alt="six">
+                    <div>Оптимизировать общение с клиентами и проведение совещаний.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <img src="images/footer_logo.svg" alt="Logo">
+    </footer>
+</body>
+
+<script src="js/select.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/popup.js"></script>
+
+</html>
+
