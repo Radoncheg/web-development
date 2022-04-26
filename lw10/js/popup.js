@@ -9,22 +9,22 @@ navbtn.addEventListener('click', function()
 {
     popup.classList.toggle('show');
     page.classList.toggle('fogging');
-})
+});
 
 close.addEventListener('click', function()
 {
     popup.classList.toggle('show');
     page.classList.toggle('fogging');
-})
+});
 
 topbtn.addEventListener('click', function()
 {
     popup.classList.toggle('show');
     page.classList.toggle('fogging');
-})
+});
 
-document.addEventListener('keypress', function (e) {
-    if (e.key === 'Escape') {
+document.addEventListener('keydown', function (event) {
+    if(event.key === 'Escape') {
         popup.classList.toggle('show');
         page.classList.toggle('fogging');
         }
