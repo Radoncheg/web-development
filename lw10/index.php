@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/select.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;500;600&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto+Condensed:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
-<body class="page">
-    <div class="page-margin">
-        <div class="register page-margin">
+      <div class="register page-margin">
             <button title="Закрыть (ESC)" type="button" class="register__close-button">×</button>
             <div class="image-welcome">
                 <img src="images/Welcome.png" alt="Welcome" class="image">
@@ -41,6 +39,8 @@
                 </form>
             </form>
         </div>
+<body>
+    <div class="page-margin">
         <div class="menu-btn">
             <span></span>
             <span></span>
@@ -158,10 +158,6 @@
         <img src="images/footer_logo.svg" alt="Logo">
     </footer>
 </body>
-
-<script src="js/select.js"></script>
-<script src="js/burger.js"></script>
-<script src="js/popup.js"></script>
 
 </html>
 

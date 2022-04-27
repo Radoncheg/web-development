@@ -1,7 +1,3 @@
-.page
-{
-    position: relative;
-}
 
 .page-margin
 {
@@ -9,13 +5,14 @@
     margin: 0 auto;
 }
 
-.fogging
+.overlay
 {
-    background-color:rgba(0,0,0,.3);
-    height:100%;
-    width:100%;
-    top:0;
-    left:0;
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(0,0,0,0.7);
+   top: 0;
+   left: 0;
 }
 
 .menu-btn
@@ -284,9 +281,9 @@
 
 .register
 {
-    height: 423px;
+    height: 50%;
     width: 320px;
-    top: 15%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
@@ -299,7 +296,6 @@
     background-color: #FFF;
     z-index: 3;
     opacity: 0;
-
     transition: all 0.5s;
 }
 
@@ -317,16 +313,12 @@
 
 .show
 {
+    position: fixed;
     visibility: visible;
     opacity: 1;
     transition: all 0.5s;
-    height: 847px;
+    height: 95%;
     width: 640px;
-}
-
-.close
-{
-    visibility: hidden;
 }
 
 
