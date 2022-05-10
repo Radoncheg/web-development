@@ -281,13 +281,13 @@
 
 .register
 {
-    height: 50%;
-    width: 320px;
-    top: 50%;
-    left: 50%;
+    height: 80%;
+    width: 40%;
+    left: 30%;
+    top: 5%;
     transform: translate(-50%, -50%);
     visibility: hidden;
-    position: absolute;
+    position: fixed;
     margin-left: auto;
     box-shadow: 0px 16px 48px rgba(60, 0, 61, 0.48);
     border-radius: 12px;
@@ -295,8 +295,6 @@
     flex-flow: column nowrap;
     background-color: #FFF;
     z-index: 3;
-    opacity: 0;
-    transition: all 0.5s;
 }
 
 .register__close-button
@@ -310,17 +308,6 @@
     right: 20px;
     cursor: pointer;
 }
-
-.show
-{
-    position: fixed;
-    visibility: visible;
-    opacity: 1;
-    transition: all 0.5s;
-    height: 95%;
-    width: 640px;
-}
-
 
 .register__title
 {
@@ -409,11 +396,12 @@
 
 @media (max-width: 1366px)
 {
-
-    .show
+    .register
     {
-        max-width: 95%;
+        width: 50%;
+        left: 25%;
     }
+ 
 
     .header-logo
     {
@@ -474,6 +462,12 @@
 
 @media (max-width: 1024px)
 {
+    .register
+    {
+        width: 70%;
+        left: 15%
+    }
+
     .header-logo
     {
         max-width: 100px;
@@ -596,6 +590,11 @@
 
 @media (max-width: 800px)
 {
+    .register
+    {
+        left: 15%
+    }
+
     .navigation
     {
         font-size: 14px;
@@ -630,6 +629,12 @@
 
 @media (max-width: 700px)
 {
+    .register
+    {
+        left: 5%;
+        width: 90%;
+    }
+
     .menu-btn
     {
         display: block;
@@ -700,7 +705,11 @@
 
 @media (max-width: 480px)
 {
-
+    .register
+    {
+        left: 5%;
+        width: 95%;
+    }
       .top__content_text-large, .bottom__content_text-large-mindblowing, .bottom__content_text-large-finances, .columns__header
     {
         font-size: 30px;

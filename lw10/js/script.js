@@ -1,6 +1,7 @@
 window.onload = main;
 
 function main() {
+    var start = null;
     const popup = document.querySelector('.register');
     const navbtn = document.querySelector('.menu__button');
     const topbtn = document.querySelector('.top__button');
@@ -15,6 +16,37 @@ function main() {
 
     let menuBtn = document.querySelector('.menu-btn');
     let menu = document.querySelector('.navigation');
+
+    function step(timestamp) {
+        if (!start) start = timestamp;
+        var progress = timestamp - start;
+        popup.style.visibility = "visible";
+        scalePopupWindow = 0.5;
+        popup.style.transform = "scale(" + scalePopupWindow + ")";
+        requestAnimationFrame(openPopupAnimation);
+      }
+
+    function openPopupAnimation() {
+        let step = 0.05;
+        scalePopupWindow += step;
+        popup.style.transform = "scale(" + scalePopupWindow + ")";
+        if (scalePopupWindow < 1) {
+        requestAnimationFrame(openPopupAnimation)
+        }
+    }
+
+    function closePopupAnimation(){
+        let step = 0.05;
+        scalePopupWindow -= step;
+        popup.style.transform = "scale(" + scalePopupWindow + ")";
+        if (scalePopupWindow > 0.5) {
+        requestAnimationFrame(closePopupAnimation)
+        }
+        else {
+        popup.style.visibility = "hidden";
+        document.body.removeChild(overlayDiv);
+        }
+    }
 
     menuBtn.addEventListener('click', function () {
         menu.classList.toggle('active');
@@ -48,14 +80,13 @@ function main() {
 
     function onClick() {
         document.body.appendChild(overlayDiv);
-        popup.classList.add('show');
         document.body.style.overflow = "hidden";
+        window.requestAnimationFrame(step);
     }
 
     function onPopupClose() {
-        document.body.removeChild(overlayDiv);
-        popup.classList.remove('show');
         document.body.style.overflow = "";
+        requestAnimationFrame(closePopupAnimation);
     }
 
     navbtn.addEventListener('click', onClick);
@@ -63,17 +94,17 @@ function main() {
 
 
     close.addEventListener('click', function () {
-        document.body.removeChild(overlayDiv);
-        popup.classList.remove('show');
         document.body.style.overflow = "";
+        requestAnimationFrame(closePopupAnimation);
     });
 
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
-            document.body.removeChild(overlayDiv);
-            popup.classList.remove('show');
             document.body.style.overflow = "";
+            popup.style.visibility = "hidden";
+            requestAnimationFrame(closePopupAnimation);
         }
     });
 }
+
