@@ -1,0 +1,1 @@
+{"name":"irina","email":"hakkamada@mail.ru","activities":"Программист","agreement":true}

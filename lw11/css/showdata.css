@@ -1,0 +1,110 @@
+body
+{
+  margin: 30px 100px;
+  max-width: 1400px;
+}
+
+.get-survey__button 
+{
+  max-width: 372px;
+  width: 372px;
+  padding: 20px 70px;
+  font: 500 18px 'Montserrat';
+  border-radius: 5px;
+  background-color: #000;
+  color: #FFF;
+}
+
+.button-get
+{
+  margin-bottom: 30px;
+}
+
+.data-form__container
+{
+    display: flex;
+}
+
+.data-form__data-container 
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.get-survey__button:hover 
+{
+  background-color: #1C1C1C;
+  cursor: pointer;
+}
+
+.data-form__data-element
+{
+  position: relative;
+  height: 288px;
+  background-color: #000;
+  color: #fff;
+  width: 372px;
+  border-radius: 10px;
+}
+
+.data-item
+{
+  display: flex;
+  gap: 74px 69px;
+  flex-wrap: wrap;
+  font: 500 18px 'Montserrat';
+}
+
+.data-form__data-element::after
+{
+  background: url("../images/Group.svg");
+  content: '';
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: 48px;
+  left: 32px;
+}
+
+.data-form__text
+{
+  line-height: 22px;
+  margin-bottom: 9px;
+}
+
+.data-content 
+{
+  margin: 121px 31px 0;
+}
+
+@media (max-width: 1366px)
+{
+  body
+  {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 450px)
+{
+  body
+  {
+    margin-left: 10px; 
+  }
+
+  .data-form__data-element
+  {
+    min-width: 280px;
+    width: 90%;
+  }
+
+  .get-survey__button 
+  {
+    min-width: 280px;
+    width: 90%;
+    padding: 20px 20px;
+  }
+
+}
+

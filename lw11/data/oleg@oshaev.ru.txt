@@ -1,0 +1,1 @@
+{"name":"olegoshaev","email":"oleg@oshaev.ru","activities":"Дизайнер","agreement":false}

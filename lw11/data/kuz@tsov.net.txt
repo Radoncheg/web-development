@@ -1,0 +1,1 @@
+{"name":"vladimir","email":"kuz@tsov.net","activities":"Программист","agreement":"false"}

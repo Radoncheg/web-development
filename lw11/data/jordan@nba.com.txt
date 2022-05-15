@@ -1,0 +1,1 @@
+{"name":"michael","email":"jordan@nba.com","activities":"Маркетолог","agreement":true}

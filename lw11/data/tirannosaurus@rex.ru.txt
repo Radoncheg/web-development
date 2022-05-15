@@ -1,0 +1,1 @@
+{"name":"Trex","email":"tirannosaurus@rex.ru","activities":"Программист","agreement":true}

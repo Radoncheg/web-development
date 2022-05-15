@@ -1,0 +1,1 @@
+{"name":"donald","email":"trumph@twitter.com","activities":"Программист","agreement":false}
