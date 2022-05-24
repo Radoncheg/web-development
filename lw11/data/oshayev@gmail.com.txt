@@ -1,1 +1,1 @@
-{"name":"Олег","email":"oshayev@gmail.com","activities":"Дизайнер","agreement":true}
+{"name":"Олег","email":"oshayev@gmail.com","activities":"Программист","agreement":false}

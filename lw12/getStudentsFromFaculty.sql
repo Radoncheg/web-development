@@ -1,14 +1,14 @@
 SELECT
-    stdFirstName, stdLastName, StdAge, GroupName, FacName
+    first_name, last_name, age, group_name, faculty_name
 FROM
-    student
+    student AS s
 LEFT JOIN 
-    stdGroup 
+    student_group AS sg
 ON 
-    student.GroupNo = stdGroup.id
+    s.group_number = sg.id
 LEFT JOIN 
-    faculty
+    faculty AS f
 ON
-    stdGroup.FacNo = faculty.id
+    sg.faculty_number = f.id
 WHERE
-    FacName = 'Design';
+    faculty_name = 'Design';

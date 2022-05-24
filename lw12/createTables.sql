@@ -1,25 +1,25 @@
 CREATE TABLE faculty
 (   
     id INT AUTO_INCREMENT NOT NULL,
-    FacName VARCHAR(50) NOT NULL,
+    faculty_name VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
 
-CREATE TABLE stdGroup
+CREATE TABLE student_group
 (   
     id INT AUTO_INCREMENT NOT NULL,
-    GroupName VARCHAR(50) NOT NULL,
-    FacNo INT NOT NULL,
+    group_name VARCHAR(255) NOT NULL,
+    faculty_number INT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (FacNo) REFERENCES faculty(id)
+    FOREIGN KEY (faculty_number) REFERENCES faculty(id)
 );
 
 CREATE TABLE student
 (   id INT AUTO_INCREMENT NOT NULL,
-    StdFirstName VARCHAR(50) NOT NULL,
-    StdLastName VARCHAR(50) NOT NULL,
-    StdAge INT NOT NULL,
-    GroupNo INT NOT NULL,
-    FOREIGN KEY (GroupNo) REFERENCES stdGroup(id),
-    PRIMARY KEY (id)
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    age INT NOT NULL,
+    group_number INT NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (group_number) REFERENCES student_group(id)
 );

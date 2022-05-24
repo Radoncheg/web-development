@@ -1,12 +1,12 @@
 INSERT INTO
-    faculty(FacName)
+    faculty(faculty_name)
 VALUES
    ('Programming'),
    ('Design'),
    ('Marketing');
 
 INSERT INTO
-    stdGroup(GroupName, FacNo)
+    student_group(group_name, faculty_number)
 VALUES
     ('VM', 1),
     ('PS', 1),
@@ -19,7 +19,7 @@ VALUES
     ('SMM', 3);
 
 INSERT INTO
-    student(StdFirstName, StdLastName, StdAge, GroupNo)
+    student(first_name, last_name, age, group_number)
 VALUES
     ('Steve', 'Jobs', 19, 1),
     ('Ilon', 'Musk', 19, 1),
