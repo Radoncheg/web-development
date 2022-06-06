@@ -1,0 +1,1 @@
+{"name":"asdasf","email":"asf@asdf.ru","activities":"Программист","agreement":true}

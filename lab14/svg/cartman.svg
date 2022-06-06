@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" >
+    <ellipse fill="#FF1C3F" cx="140" cy="150" rx="90" ry="65"/>
+    <ellipse fill="#FEEFC3" cx="140" cy="90" rx="75" ry="64" />
+
+    <path d="M64,85 C95,8 180,7 215,75 "   fill="#00B8C4" stroke="#00B8C4"/>
+    <path d="M64,86 C108,61 150,53 215,75" fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M65,88 C121,70 143,67 215,77 "  fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M64,91 C108,65 150,57 216,78" fill="#FEEFC3" stroke="#FEEFC3"/>
+
+    <path d="M119,29 C113,19 142,14 153,28 "  fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M121,24 C119,46 127,17 134,19 "   fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M122,26 C98,39 137,30 125,22 "  fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M126,27 C127,43 139,21 145,27 "   fill="#FEE01C" stroke="#FEE01C"/>
+    <path d="M134,27 C146,39 151,28 147,25 "   fill="#FEE01C" stroke="#FEE01C"/>
+
+    <ellipse cx="153" cy="30.5" rx="16" ry="22" fill="black" stroke="black" style="transform: rotate(24deg);"></ellipse>
+    <ellipse cx="153" cy="31" rx="17" ry="22" fill="white" stroke="white" style="transform: rotate(24deg);"></ellipse>
+    <ellipse cx="114" cy="148.5" rx="16" ry="22" fill="black" stroke="black" style="transform: rotate(-24deg);"></ellipse>
+    <ellipse cx="114" cy="149" rx="17" ry="22" fill="white" stroke="white" style="transform: rotate(-24deg);"></ellipse>
+    <circle cx="133" cy="87" r="2" fill="black"/>
+    <circle cx="156" cy="87" r="2" fill="black" />
+
+    <polyline points="145,138 134,127 159,127 152,138" ></polyline>
+    <path d="M134,139 C148,144 154,139 161,138 "   fill="none" stroke="black" stroke-width="0.5"/>
+    <rect x="142" y="128" width="3" height="3" fill="#FCFCFB"/>
+    <rect x="146" y="128" width="4" height="3" fill="#FCFCFB"/>
+    <rect x="151" y="128" width="4" height="3" fill="#FCFCFB"/>
+
+    <path d="M82,125 Q120,151 151,147 T204,120 " fill="none" stroke="black" stroke-width="0.5" />
+    <path d="M135,128 C137,125 149,125 158,128 " />
+
+    <polyline points="71,206 55,163 226,165 213,206" fill="#7F4228" stroke="#7F4228" />
+    <polyline points="73,246 55,203 226,205 213,246" fill="white" stroke="white" />
+    <rect x="66" y="204" width="151" height="3" />
+    <path d="M66,204 Q73,199 107,198 T143,204 "/>
+    <path d="M144,206 Q168,199 188,199 T218,205 " />
+
+
+    <path d="M52,161 Q55,197 125,187 T162,161 "  fill="#FF1C3F" />
+    <path d="M52,161 Q68,195 131,195 T221,163 " fill="#FF1C3F"/>
+    <path d="M119,164 Q126,189 180,185 T228,161 "  fill="#FF1C3F"/>
+    <path d="M132,191 Q175,194 197,190 T228,167 "   fill="#FF1C3F"/>
+
+    <path d="M133,199 Q169,186 191,188 T221,189 " fill="#7F4228"/>
+
+
+    <path d="M219,120 Q233,133 233,160 T206,188 "   fill="#FF1C3F"/>
+    <path d="M212,110 Q231,113 233,142 T207,142 "     fill="#FF1C3F"/>
+
+    <path d="M223,128 Q243,121 244,142 T228,158 " fill="#FEE01C" />
+    <path d="M229,159 Q218,151 215,143 T224,129 " fill="#FEE01C" />
+    <path d="M223,152 Q206,159 212,145 T223,130 " fill="#FEE01C" />
+
+    <path d="M61,181 Q44,155 51,132 T68,111 "  fill="#FF1C3F"/>
+
+    <path d="M64,156 Q37,160 39,140 T72,137 " fill="#FEE01C" />
+    <path d="M64,156 Q77,156 82,152 T72,137 " fill="#FEE01C" />
+
+
+    <path d="M152,156 Q150,176 151,183 T151,194 " fill="none" stroke="black" />
+    <rect x="144" y="155" width="3" height="3" fill="black"/>
+    <rect x="147" y="170" width="1.5" height="4" fill="black"/>
+    <rect x="144" y="185" width="3" height="3" fill="black"/>
+</svg>
